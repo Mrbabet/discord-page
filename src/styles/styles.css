@@ -1,0 +1,91 @@
+header {
+  background-color: #3d20d1;
+}
+header .wrapper {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.small-button {
+  margin-left: auto;
+  background-color: rgb(246, 246, 246);
+  color: rgb(35, 39, 42);
+  padding: 7px 10px;
+  border-radius: 99vh;
+  border: 0;
+  font-size: 14px;
+}
+.burger-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.hero {
+  background-color: #3d20d1;
+}
+.hero .wrapper {
+  padding: 32px 16px;
+}
+.hero .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+svg {
+  max-width: 540px;
+}
+.hero-text {
+  display: flex;
+  justify-content: center;
+}
+.hero-text p {
+  max-width: 640px;
+  color: white;
+  text-align: center;
+}
+.button-container {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 255px;
+}
+.button-container button:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(246, 246, 246);
+  color: rgb(35, 39, 42);
+  padding: 14px 60px;
+  border-radius: 99vh;
+  border: 0;
+  min-width: 298px;
+  max-width: 360px;
+  width: 100%;
+}
+.button-container button:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(35, 39, 42);
+  color: rgb(246, 246, 246);
+  padding: 14px 20px;
+  border-radius: 99vh;
+  border: 0;
+  min-width: 298px;
+  max-width: 360px;
+  width: 100%;
+}
+.polaroid-img {
+  margin-top: 2rem;
+}
