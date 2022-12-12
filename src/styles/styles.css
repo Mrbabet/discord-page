@@ -89,3 +89,29 @@ svg {
 .polaroid-img {
   margin-top: 2rem;
 }
+.section-2 .wrapper {
+  padding: 32px 16px;
+}
+.section-2 .heading {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.box-container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f2f3f5;
+  border-radius: 20px;
+}
