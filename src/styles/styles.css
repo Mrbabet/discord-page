@@ -11,6 +11,10 @@ header .wrapper {
   justify-content: center;
   align-items: center;
 }
+.logo img {
+  width: 124px;
+  height: 34px;
+}
 .small-button {
   margin-left: auto;
   background-color: rgb(246, 246, 246);
@@ -39,9 +43,7 @@ header .wrapper {
   justify-content: center;
   align-items: center;
 }
-svg {
-  max-width: 540px;
-}
+
 .hero-text {
   display: flex;
   justify-content: center;
