@@ -185,3 +185,41 @@ header .wrapper {
   border: 3px solid #f6f6f6;
   border-radius: 20px;
 }
+.section-4 {
+  background-color: #3d21d1;
+  background-image: url(/src/images/63628142f7a0ffe5a43ac6bd_Illustrations\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 50%;
+}
+.section-4 .wrapper {
+  padding: 32px 16px;
+  padding-block: 88px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-4 .wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(35, 39, 42);
+  padding: 14px 20px;
+  border-radius: 99vh;
+  border: 0;
+  min-width: 298px;
+  max-width: 360px;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+footer {
+  background-color: #23272a;
+}
+footer .wrapper {
+  padding: 32px 16px;
+}
