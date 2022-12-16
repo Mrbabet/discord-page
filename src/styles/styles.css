@@ -223,3 +223,26 @@ footer {
 footer .wrapper {
   padding: 32px 16px;
 }
+.footer-bottom {
+  padding-top: 2rem;
+  display: flex;
+  border-top: 1px solid #5865f2;
+}
+.footer-bottom img {
+  width: 124px;
+  height: 34px;
+}
+.footer-bottom a {
+  text-decoration: none;
+  background-color: #5865f2;
+  color: white;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+}
+.footer-top {
+  grid-column: span 2;
+}
