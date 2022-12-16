@@ -1,6 +1,9 @@
 header {
   background-color: #3d20d1;
 }
+a {
+  cursor: pointer;
+}
 @media screen and (max-width: 1000px) {
   header {
     position: fixed;
@@ -78,7 +81,7 @@ header .wrapper {
   gap: 2rem;
   min-width: 255px;
 }
-.button-container button:nth-of-type(1) {
+.button-container a:nth-of-type(1) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +95,7 @@ header .wrapper {
   max-width: 360px;
   width: 100%;
 }
-.button-container button:nth-of-type(2) {
+.button-container a:nth-of-type(2) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,6 +179,7 @@ header .wrapper {
   font-size: 32px;
   font-weight: 800;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .box {
   padding: 32px;
@@ -186,7 +190,30 @@ header .wrapper {
   text-align: center;
   border: 3px solid #f6f6f6;
   border-radius: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  gap: 1rem;
+}
+.box > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.33rem;
+  text-decoration: none;
+  color: #0067e0;
+  margin-top: 12px;
+  font-weight: 600;
+}
+.box a img {
+  width: 16px;
+  height: 16px;
+}
+.box p {
+  color: #2e3338;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
 }
 .section-4 {
   background-color: #3d21d1;
