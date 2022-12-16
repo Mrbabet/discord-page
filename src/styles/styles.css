@@ -30,6 +30,7 @@ header .wrapper {
 }
 .discord-link {
   margin-left: auto;
+  margin-right: 0.25rem;
   background-color: rgb(246, 246, 246);
   color: rgb(35, 39, 42);
   padding: 7px 10px;
@@ -37,6 +38,8 @@ header .wrapper {
   border: 0;
   font-size: 14px;
   text-decoration: none;
+  line-height: 24px;
+  font-weight: 800;
 }
 
 .burger-button {
@@ -45,6 +48,136 @@ header .wrapper {
   padding: 0;
   background-color: transparent;
   border: 0;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100000;
+}
+
+.burger-button .bars {
+  margin: 0;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+.burger-button.active .bars {
+  background-color: white;
+}
+.burger-button .bars:before,
+.burger-button .bars:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burger-button.active .bars:before,
+.burger-button.active .bars:after {
+  content: "";
+  background-color: black;
+}
+.burger-button .bars:before {
+  content: "";
+  transform: translateY(-6px);
+}
+.burger-button .bars:after {
+  content: "";
+  transform: translateY(6px);
+}
+.burger-button.active .bars {
+}
+.burger-button.active .bars:before {
+  content: "";
+  transform: rotate(45deg);
+  transition: 400ms ease-in-out;
+}
+.burger-button.active .bars:after {
+  content: "";
+  transform: rotate(-45deg);
+  transition: 400ms ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+  .burger-button {
+    display: none;
+  }
+}
+.nav-mobile.active {
+  transform: translateX(0%);
+}
+
+.nav-mobile {
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 320px;
+  max-width: 992px;
+  background-color: white;
+  z-index: 100;
+  padding: 16px 0px 16px 16px;
+  transform: translateX(100%);
+}
+.nav-mobile-header {
+  display: flex;
+  gap: 1rem;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: #ebedef #ebedef #111;
+  filter: invert(100%);
+  padding-bottom: 1rem;
+}
+
+.nav-mobile-header .discord-link-nav-mobile {
+  padding: 7px 10px;
+  border-radius: 99vh;
+  border: 0;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #a79a0d;
+  color: black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 800;
+}
+.burger-button.active .nav-mobile-header .discord-link-nav-mobile {
+  animation: discord-button-show 0.5s ease-in-out;
+}
+@keyframes discord-button-show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav-mobile-main ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.nav-mobile-main a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #23272a;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
 }
 
 .hero {
@@ -95,6 +228,7 @@ header .wrapper {
   max-width: 360px;
   width: 100%;
 }
+
 .button-container a:nth-of-type(2) {
   display: flex;
   justify-content: center;
