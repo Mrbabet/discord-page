@@ -33,7 +33,9 @@ header .wrapper {
   border-radius: 99vh;
   border: 0;
   font-size: 14px;
+  text-decoration: none;
 }
+
 .burger-button {
   width: 40px;
   height: 40px;
@@ -184,6 +186,7 @@ header .wrapper {
   text-align: center;
   border: 3px solid #f6f6f6;
   border-radius: 20px;
+  margin-bottom: 2rem;
 }
 .section-4 {
   background-color: #3d21d1;
@@ -223,7 +226,41 @@ footer {
 footer .wrapper {
   padding: 32px 16px;
 }
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  gap: 2rem;
+}
+.footer-top .heading-color {
+  font-family: "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #5865f2;
+  font-size: 32px;
+  line-height: 80%;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.footer-top .social-media {
+  display: flex;
+  gap: 1rem;
+}
+.footer-grid > .footer-nav li:nth-of-type(1) {
+  color: #5865f2;
+  margin-bottom: 1.5rem;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .footer-bottom {
+  margin-top: 2rem;
   padding-top: 2rem;
   display: flex;
   border-top: 1px solid #5865f2;
@@ -238,11 +275,6 @@ footer .wrapper {
   color: white;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  color: white;
-}
 .footer-top {
   grid-column: span 2;
 }
