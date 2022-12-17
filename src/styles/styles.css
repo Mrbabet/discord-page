@@ -483,6 +483,23 @@ footer ul {
   color: white;
   gap: 2rem;
 }
+@media screen and (min-width: 1100px) {
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: white;
+    gap: 2rem;
+  }
+}
+.footer-top {
+  grid-column: span 2;
+}
+@media screen and (min-width: 1100px) {
+  .footer-top {
+    grid-column: unset;
+  }
+}
+
 .footer-top .heading-color {
   font-family: "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -492,9 +509,22 @@ footer ul {
   font-weight: 900;
   text-transform: uppercase;
 }
+.language {
+  margin-block: 2rem;
+}
 .footer-top .social-media {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  font-size: 20px;
+  color: white;
+  margin-top: 2rem;
+}
+.sc-icon {
+  width: 20px;
+  height: 20px;
+}
+.sc-icon path {
+  fill: white;
 }
 .footer-grid > .footer-nav li:nth-of-type(1) {
   color: #5865f2;
@@ -526,9 +556,7 @@ footer ul {
   color: white;
 }
 
-.footer-top {
-  grid-column: span 2;
-}
+/* Media for all wrappers */
 @media screen and (min-width: 1100px) {
   .wrapper {
     margin: 0 auto;
