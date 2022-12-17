@@ -1,10 +1,13 @@
+body {
+  overflow: hidden;
+}
 header {
   background-color: #3d20d1;
 }
 a {
   cursor: pointer;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   header {
     position: fixed;
     top: 0;
@@ -14,11 +17,18 @@ a {
     /* Dodać Javascript który czyta wartość height headera */
   }
 }
+
 header .wrapper {
   display: flex;
   padding: 16px;
   align-items: center;
 }
+@media screen and (min-width: 1101px) {
+  header .wrapper {
+    justify-content: space-between;
+  }
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -40,6 +50,11 @@ header .wrapper {
   text-decoration: none;
   line-height: 24px;
   font-weight: 800;
+}
+@media screen and (min-width: 1101px) {
+  .discord-link {
+    margin: 0;
+  }
 }
 
 .burger-button {
@@ -92,8 +107,7 @@ header .wrapper {
   content: "";
   transform: translateY(6px);
 }
-.burger-button.active .bars {
-}
+
 .burger-button.active .bars:before {
   content: "";
   transform: rotate(45deg);
@@ -105,11 +119,14 @@ header .wrapper {
   transition: 400ms ease-in-out;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1100px) {
   .burger-button {
     display: none;
   }
 }
+
+/* Navigation Mobile */
+
 .nav-mobile.active {
   transform: translateX(0%);
 }
@@ -179,17 +196,59 @@ header .wrapper {
   font-weight: 700;
   text-align: left;
 }
+@media screen and (min-width: 1101px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+/* Navigation desktop */
+@media screen and (min-width: 1101px) {
+  .nav-desktop ul {
+    flex-basis: 100%;
+    margin-left: auto;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+  }
+  .nav-desktop a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .nav-desktop {
+    display: none;
+  }
+}
 
 .hero {
   background-color: #3d20d1;
+}
+@media screen and (min-width: 1100px) {
+  .hero {
+    background-image: url(/src/images/hero-desktop-background-image.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 2850px;
+    min-height: 100vh;
+    overflow: hidden;
+  }
 }
 .hero .wrapper {
   padding: 32px 16px;
   margin-top: 72px;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1100px) {
   .hero .wrapper {
     margin-top: 0;
+    padding: 220px;
   }
 }
 .hero .heading {
@@ -243,8 +302,24 @@ header .wrapper {
   max-width: 360px;
   width: 100%;
 }
+@media screen and (min-width: 1100px) {
+  .button-container {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  .button-container a {
+    min-width: fit-content;
+  }
+}
 .polaroid-img {
   margin-top: 2rem;
+}
+@media screen and (min-width: 1100px) {
+  .polaroid-img {
+    display: none;
+  }
 }
 .section-2 .wrapper {
   padding: 32px 16px;
@@ -356,6 +431,11 @@ header .wrapper {
   background-size: cover;
   background-position: 20% 50%;
 }
+@media screen and (min-width: 1100px) {
+  .section-4 {
+    background-position: center center;
+  }
+}
 .section-4 .wrapper {
   padding: 32px 16px;
   padding-block: 88px;
@@ -365,6 +445,11 @@ header .wrapper {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+@media screen and (min-width: 1100px) {
+  .section-4 .wrapper {
+    padding-block: 220px;
+  }
 }
 .section-4 .wrapper a {
   display: flex;
@@ -426,6 +511,11 @@ footer ul {
   display: flex;
   border-top: 1px solid #5865f2;
 }
+@media screen and (min-width: 1100px) {
+  .footer-bottom {
+    justify-content: space-between;
+  }
+}
 .footer-bottom img {
   width: 124px;
   height: 34px;
@@ -438,4 +528,10 @@ footer ul {
 
 .footer-top {
   grid-column: span 2;
+}
+@media screen and (min-width: 1100px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
 }
