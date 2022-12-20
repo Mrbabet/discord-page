@@ -19,3 +19,16 @@ menuAcitve.addEventListener("click", () => {
     buttonActive = false;
   }
 });
+
+const selectButton = document.querySelector(".selected-lang");
+const langMenu = document.querySelector(".dropdown-container");
+
+selectButton.addEventListener("click", () => {
+  if (!buttonActive) {
+    langMenu.classList.add("active");
+    buttonActive = true;
+  } else {
+    langMenu.classList.remove("active");
+    buttonActive = false;
+  }
+});

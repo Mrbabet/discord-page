@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/086008f654.js"
-      crossorigin="anonymous"
-    ></script>
 
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <link rel="stylesheet" href="./src/styles/reset.css" />
@@ -267,21 +263,28 @@
         <div class="footer-grid">
           <div class="footer-top">
             <div class="heading-color">WYOBRAŹ SOBIE MIEJSCE</div>
-            <div class="language">
-              <div class="lang-container">
-                <div class="locale-dropdown-container">
-                  <div class="lang-dropdown">
-                    <div class="dropdown-item">
-                      <img src="/src/images/flags/poland-flag.png" alt="" />
-                      <div><a href="">Polski</a></div>
-                    </div>
-                    <div class="dropdown-item">
-                      <img src="/src/images/flags/US-flag.png" alt="" />
-                      <div><a href="">English</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="lang-menu">
+              <button class="selected-lang">
+                <img src="/src/images/flags/poland-flag.png" alt="" />
+                <div>Polski</div>
+              </button>
+              <ul class="dropdown-container">
+                <li>
+                  <a href="#" class="de">German</a>
+                </li>
+                <li>
+                  <a href="" class="en">
+                    <img src="/src/images/flags/US-flag.png" alt="" />
+                    English</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="fr">French</a>
+                </li>
+                <li>
+                  <a href="" class="ar">Arabic</a>
+                </li>
+              </ul>
             </div>
             <ul class="social-media">
               <li class="sc-twitter sc-icon">
@@ -372,5 +375,9 @@
       </div>
     </footer>
     <script src="/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/086008f654.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
