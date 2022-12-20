@@ -509,6 +509,25 @@ footer ul {
 }
 .language {
   margin-block: 2rem;
+  user-select: none;
+  display: flex;
+}
+.lang-container {
+  width: 80px;
+}
+.dropdown-item {
+  display: flex;
+  align-items: center;
+}
+.dropdown-item img {
+  height: 16px;
+  width: 24px;
+}
+.dropdown-item a {
+  padding-left: 0.5rem;
+  text-decoration: none;
+  color: white;
+  text-align: left;
 }
 .footer-top .social-media {
   display: flex;
