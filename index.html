@@ -23,7 +23,7 @@
         </div>
         <nav class="nav-desktop">
           <ul>
-            <li><a href="">Pobierz</a></li>
+            <li><a href="" lang-key="download">Pobierz</a></li>
             <li><a href="">Nitro</a></li>
             <li><a href="">Odkryj</a></li>
             <li><a href="">Bezpieczeństwo</a></li>
@@ -265,11 +265,9 @@
           <div class="footer-top">
             <div class="heading-color">WYOBRAŹ SOBIE MIEJSCE</div>
             <div class="lang-menu">
-              <button class="selected-lang">
-                <a class="pl">
-                  <img src="/src/images/flags/poland-flag.png" alt="" />
-                  Polski</a
-                >
+              <button onclick="translator.setLang('pl')" class="selected-lang">
+                <img src="/src/images/flags/poland-flag.png" alt="" />
+                Polski
               </button>
               <ul class="dropdown-container">
                 <li>
@@ -279,10 +277,10 @@
                   >
                 </li>
                 <li>
-                  <a>
+                  <button onclick="translator.setLang('en')">
                     <img src="/src/images/flags/US-flag.png" alt="" />
-                    English</a
-                  >
+                    English
+                  </button>
                 </li>
                 <li>
                   <a href="" class="fr"
@@ -387,8 +385,10 @@
       </div>
     </footer>
     <script src="/script.js"></script>
-    <script src="/js/index.js"></script>
-    <script src="/js/translate.js"></script>
+    <script src="/translator/translator.js"></script>
+    <script>
+      translator.loadTranslations("/translator/translations.json");
+    </script>
     <script
       src="https://kit.fontawesome.com/086008f654.js"
       crossorigin="anonymous"
