@@ -590,6 +590,9 @@ footer ul {
 .sc-twitter:hover path {
   fill: #00aced;
 }
+.sc-icon::after {
+  border-radius: 5px;
+}
 .sc-twitter:hover::after {
   content: "Twitter";
   font-size: 12px;
@@ -622,7 +625,7 @@ footer ul {
 .sc-facebook:hover path {
   fill: #3b5998;
 }
-.sc-fabebook:hover::after {
+.sc-facebook:hover::after {
   content: "Facebook";
   font-size: 12px;
   display: flex;
