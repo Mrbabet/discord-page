@@ -1,45 +1,51 @@
 {
-	"default_language": "pl",
-	"languages": ["en", "pl"],
-	"translations": {
-		"download": {
-			"en": "Download",
-			"pl": "Pobierz"
-		},
-		"nitro": {
-			"en": "Nitro",
-			"pl":"Nitro"
-		},
-		"discover": {
-			"en": "Discover",
-			"pl":"Odkryj"
-		},"safety": {
-			"en": "Safety",
-			"pl":"Bezpieczeństwo"
-		},"support": {
-			"en": "Support",
-			"pl":"Wspracie"
-		},
-		"careers": {
-			"en": "Careers",
-			"pl":"Praca"
-		},
-		"sign-up-button":{
-			"en": "Sign up",
-			"pl":"Zarejestruj się"
-		},
+  "default_language": "pl",
+  "languages": ["en", "pl"],
+  "translations": {
+    "download": {
+      "en": "Download",
+      "pl": "Pobierz"
+    },
+    "nitro": {
+      "en": "Nitro",
+      "pl": "Nitro"
+    },
+    "discover": {
+      "en": "Discover",
+      "pl": "Odkryj"
+    },
+    "safety": {
+      "en": "Safety",
+      "pl": "Bezpieczeństwo"
+    },
+    "support": {
+      "en": "Support",
+      "pl": "Wspracie"
+    },
+    "careers": {
+      "en": "Careers",
+      "pl": "Praca"
+    },
+    "sign-up-button": {
+      "en": "Sign up",
+      "pl": "Zarejestruj się"
+    },
 
-		"hero-text":{
-			"en": "`Tis the season when the Discord community comes together to celebrate our big cozy place on the internet by supporting a good cause and giving out tons of fun rewards. Discord's Snowsgiving merch profits support this year's charity partner: Crisis Text Line.",
-			"pl":"To sezon, w którym społeczność Discorda łączy się, aby świętować nasze przytulne miejsce w internecie, wspierając dobry cel i rozdając mnóstwo fajnych nagród. Zyski ze sprzedaży towarów w ramach Snowsgiving Discord wspierają tegorocznego partnera charytatywnego: Crisis Text Line. "
-		},
-		"donate":{
-			"en": "Donate",
-			"pl":"Przekaż Datek"
-		},
-		"discover-snow":{
-			"en": "Explore Snowy Surprises",
-			"pl":"Odkrywaj Śnieżne Niespodzianki"
-		}
-		
-	}}
+    "hero-text": {
+      "en": "`Tis the season when the Discord community comes together to celebrate our big cozy place on the internet by supporting a good cause and giving out tons of fun rewards. Discord's Snowsgiving merch profits support this year's charity partner: Crisis Text Line.",
+      "pl": "To sezon, w którym społeczność Discorda łączy się, aby świętować nasze przytulne miejsce w internecie, wspierając dobry cel i rozdając mnóstwo fajnych nagród. Zyski ze sprzedaży towarów w ramach Snowsgiving Discord wspierają tegorocznego partnera charytatywnego: Crisis Text Line. "
+    },
+    "donate": {
+      "en": "Donate",
+      "pl": "Przekaż Datek"
+    },
+    "discover-snow": {
+      "en": "Explore Snowy Surprises",
+      "pl": "Odkrywaj Śnieżne Niespodzianki"
+    },
+    "celebration": {
+      "en": "How to celebrate with us this year?",
+      "pl": "Jak świętować w tym roku razem z nami?"
+    }
+  }
+}
