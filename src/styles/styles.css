@@ -40,6 +40,7 @@ header .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .logo img {
   width: 124px;
@@ -482,6 +483,9 @@ footer ul {
   margin: 0;
   list-style: none;
 }
+footer ul li {
+  cursor: pointer;
+}
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -544,11 +548,12 @@ footer ul {
 .lang-menu .dropdown-container.active {
   display: block;
   position: absolute;
-  top: -10px;
+  top: -160px;
   left: 0px;
   background-color: white;
   border-radius: 10px;
   width: 150px;
+  z-index: 10;
 }
 
 .lang-menu ul li {
